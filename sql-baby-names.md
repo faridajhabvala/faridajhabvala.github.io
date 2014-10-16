@@ -48,6 +48,7 @@ SELECT count, year
 FROM ssa_baby_names WHERE name = "Farida" 
 
 8) Make a line chart showing how your name has changed in popularity over the years
+
 SELECT count, year
 FROM ssa_baby_names WHERE name = "Farida" 
 
