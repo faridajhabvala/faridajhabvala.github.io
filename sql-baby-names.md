@@ -1,5 +1,7 @@
 ## Using SQLite!
 
+IMPORTANT thing to follow: Give me this, from this, and state conditionals
+
 1) In the year 2013, find out how many babies had your name: 27 
 
 2) Find the highest-rank (and the year) that your name has achieved among baby names: Rank 4099 in 2012
@@ -30,9 +32,31 @@ SELECT year,
 MAX (count) FROM ssa_baby_names WHERE sex="M"
 
 
-6) Find the year in which your name had the highest increase in names-per-100k-babies born
-Find the year in which your name had the highest decrease in names-per-100k-babies born
-Make a line chart showing how your name has changed in popularity over the years
+6) Find the year in which your name had the highest increase in names-per-100k-babies born:
+
+OK, first, I selected for year and per_100k_ change for my name: 1984, 1997, 1999, 2001, 2005, 2010
+SELECT year, per_100k_change
+FROM ssa_baby_names WHERE name = "Farida" 
+
+Turns out there's a bunch of years where the highest year was 1. Couldn't figure out how to tell it to just show me the years with change 1 (my max). But I could just see those years: 1984, 1997, 1999, 2001, 2005, 2010
+
+
+7) Find the year in which your name had the highest decrease in names-per-100k-babies born: 1985, 1998, 2003
+Same issue as above.
+
+SELECT count, year
+FROM ssa_baby_names WHERE name = "Farida" 
+
+8) Make a line chart showing how your name has changed in popularity over the years
+SELECT count, year
+FROM ssa_baby_names WHERE name = "Farida" 
+
+Then I went to "Action" dropdown and exported as .csv...
+
+![graph](http://i.imgur.com/JmMCzYy.png)
+
+
+
 Find out who in our class had the most popular baby name in 1980.
 Find out who in our class had the most popular baby name in 2013.
 Find out who in our class has the name that the most babies throughout U.S. history have.
