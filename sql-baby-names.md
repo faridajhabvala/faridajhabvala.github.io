@@ -70,5 +70,10 @@ FROM ssa_baby_names WHERE name IN ("Allison", "Laura", "Jessica")
 
 Looks like Jessica is it (but could be wrong because I didn't put everyone's name in there.
 
-Find out who in our class had the most popular baby name in 2013.
+10) Find out who in our class had the most popular baby name in 2013.
+
+This didn't work. But here is as far as I got before class!
+SELECT name, year, MAX (count) 
+FROM ssa_baby_names WHERE name in ("Allison", "Laura", "Jessica") WHERE year= "2013"
+
 Find out who in our class has the name that the most babies throughout U.S. history have.
