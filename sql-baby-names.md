@@ -57,6 +57,18 @@ Then I went to "Action" dropdown and exported as .csv...
 
 
 
-Find out who in our class had the most popular baby name in 1980.
+9) Find out who in our class had the most popular baby name in 1980: Jessica (55985)
+Looks like the most popular name is Michael, but no Michael in class...
+
+SELECT name, MAX (count)
+FROM ssa_baby_names 
+
+I suspected the most popular names in 1980 maybe where Jessica, or Laura, or Allison
+
+SELECT name, MAX (count) 
+FROM ssa_baby_names WHERE name IN ("Allison", "Laura", "Jessica")
+
+Looks like Jessica is it (but could be wrong because I didn't put everyone's name in there.
+
 Find out who in our class had the most popular baby name in 2013.
 Find out who in our class has the name that the most babies throughout U.S. history have.
