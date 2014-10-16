@@ -1,6 +1,9 @@
 ## Using SQLite!
 
-IMPORTANT thing to follow: Give me this, from this, and state conditionals
+NOTES thing to follow: Give me this, from this, and state conditionals
+
+Parenthesis tell it to count what's inside, so COUNT (x) or SUM (x)
+
 
 1) In the year 2013, find out how many babies had your name: 27 
 
