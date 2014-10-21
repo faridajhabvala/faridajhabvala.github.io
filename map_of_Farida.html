@@ -1,0 +1,10 @@
+Tried using my name in MySequel selecting for year as well, but I wasn't getting any results. So tried instead without year.
+
+
+SELECT Obama.`State`, Obama.`geometry`, `ssa_baby_names_by_state`.`count`
+FROM Obama
+JOIN `ssa_baby_names_by_state`
+ON Obama.`State`= ssa_baby_names_by_state.`state`
+WHERE `ssa_baby_names_by_state`.`name`="Farida"
+
+<iframe width="500" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col1+from+1MolNLgVIMXbCHIYR-CeK6AUW6rs_natupYTT1Sew&amp;viz=MAP&amp;h=false&amp;lat=39.04533678334344&amp;lng=-98.13131249999998&amp;t=1&amp;z=4&amp;l=col1&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
