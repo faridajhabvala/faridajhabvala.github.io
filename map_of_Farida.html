@@ -25,15 +25,15 @@ WHERE Obama.`Obama pct`>=51
 This didn't work.
 
 
-Then I tried, looking for my name in states that got more than 7 million votes for Obama. This didn't work either.
+But I figure it out! It didn't work because I wasn't using the right format in the column Obama pct. So here's the new try:
 
 SELECT Obama.`State`, Obama.`geometry`, `ssa_baby_names_by_state`.`count`, Obama.`Obama pct`
 FROM Obama
 JOIN `ssa_baby_names_by_state`
 ON Obama.`State`= ssa_baby_names_by_state.`state`
-WHERE `ssa_baby_names_by_state`.`name`="Farida" AND Obama.`Obama votes`>=7000000
+WHERE `ssa_baby_names_by_state`.`name`="Farida" AND Obama.`Obama pct`>="51.00%"
 
-Can you do conditionals like greater or equal in MySql?
+<iframe width="500" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col1+from+1EZxsLUozl8r_gyBNx0JmQt2qEVw4tKO-kqPvafCW&amp;viz=MAP&amp;h=false&amp;lat=41.85372462485942&amp;lng=-71.50045312499998&amp;t=1&amp;z=6&amp;l=col1&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
 
 
 
