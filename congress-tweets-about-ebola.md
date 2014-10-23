@@ -16,3 +16,5 @@ Then exported file as .csv and into Google Spreadsheets
 
 ![graph](http://i.imgur.com/aVuOzkD.png)
 
+Initially I wanted to graph by time, but couldn't figure it out. Then I talked to Allison, who told me about =INT to grab integers... worked for her. I'll try next time.
+
